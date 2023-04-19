@@ -1,0 +1,9 @@
+body{
+    background-color:aquamarine;
+}
+
+#camera, #resultado{
+    border:dashed lightblue;
+    width:350px;
+    height: 300px;
+}

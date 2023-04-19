@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" integrity="sha512-AQMSn1qO6KN85GOfvH6BWJk46LhlvepblftLHzAv1cdIyTWPBKHX+r+NOXVVw6+XQpeW4LJk/GTmoP48FLvblQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Identificador de Sinais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <div class="container">
+
+            <h3 id="sinais" class="btn btn-primary heading">
+                Identificador de Sinais
+                <br>
+                <span>&#9996</span>
+                <span>&#128076</span>
+                <span>&#128077</span>
+                <span>&#129304</span>
+            </h3>
+            <br>
+            <br>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div id="camera"></div>
+                <br>
+                <button class="btn btn-info" onclick="tirarFoto()">Tirar Foto</button>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <label>Previsão 1:</label>
+                <p id="emoji1"></p>
+                <p id="resultado1"></p>
+                <label>Previsão 2:</label>
+                <p id="emoji2"></p>
+                <p id="resultado2"></p>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div id="resultado"></div>
+                <br>
+                <button class="btn btn-info" onclick="check()">Identificar Sinais</button>
+            </div>
+
+
+
+
+        </div>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>
